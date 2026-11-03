@@ -4,7 +4,7 @@
 
 Objective Music is a machine learning project that aims to recommend expressive voicing for piano music. By learning from MIDI recordings of pianists alongside corresponding MuseScore scores, the model will help users explore how to bring out the musical voices in a piece they import.
 
-## What is voicing?
+## What is voicing?   env -i HOME="$HOME" PATH="$PATH" TERM="$TERM" claude
 
 In piano performance, **voicing** is the balance between notes and musical lines: bringing a melody forward, supporting it with quieter accompaniment, or highlighting an inner voice.
 
