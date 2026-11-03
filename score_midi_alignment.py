@@ -18,18 +18,18 @@ def extract_score_notes(score_entities):
                 "entity_index": entity_index
             })
 
-        score_notes.sort(
-            key=lambda score_note: (
-                score_note["offset"],
-                score_note["pitch"],
-                score_note["part"]
-            )
+    score_notes.sort(
+        key=lambda score_note: (
+            score_note["offset"],
+            score_note["pitch"],
+            score_note["part"]
         )
+    )
 
-        for score_note_id, score_note in enumerate(score_notes):
-            score_note["id"] = score_note_id
+    for score_note_id, score_note in enumerate(score_notes):
+        score_note["id"] = score_note_id
 
-        return score_notes
+    return score_notes
 
 
 def extract_midi_pitch_sequence(performed_notes):
